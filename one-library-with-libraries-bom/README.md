@@ -1,5 +1,23 @@
 # How to reproduce the error
 
+build.gradle :
+
+```
+apply plugin: 'java'
+
+// Sample declaration in https://cloud.google.com/java/docs/bom
+dependencies {
+    implementation platform('com.google.cloud:libraries-bom:26.19.0')
+
+    implementation 'com.google.cloud:google-cloud-storage'
+}
+repositories {
+    mavenCentral()
+}
+```
+
+Run the gradle command:
+
 ```
 ~/guava_capability_error $ ./gradlew -p one-library-with-libraries-bom build
 > Task :compileJava FAILED

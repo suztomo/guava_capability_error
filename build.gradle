@@ -2,7 +2,7 @@ apply plugin: 'java'
 
 dependencies {
     implementation 'com.google.api.grpc:proto-google-cloud-pubsublite-v1:1.12.12'
-    implementation 'com.google.http-client:google-http-client:1.43.3'
+//    implementation 'com.google.http-client:google-http-client:1.43.3'
 }
 repositories {
     mavenCentral()
